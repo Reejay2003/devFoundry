@@ -107,7 +107,7 @@ img { max-width: 100%; }
 @media (min-width: 900px) { .mobile-menu { display: none; } }
 
 /* hero */
-.hero { position: relative; }
+.hero { position: relative; overflow-x: clip; }
 .orb { position: absolute; border-radius: 50%; pointer-events: none; }
 .orb-a { width: 760px; height: 760px; right: -220px; top: -260px; background: radial-gradient(circle, rgba(95, 191, 138, .20), transparent 62%); animation: drift-a 44s ease-in-out infinite alternate; }
 .orb-b { width: 560px; height: 560px; left: -240px; top: 280px; background: radial-gradient(circle, rgba(239, 232, 214, .07), transparent 62%); animation: drift-b 52s ease-in-out infinite alternate; }
