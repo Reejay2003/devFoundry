@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Geist_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const sans = Plus_Jakarta_Sans({
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body>
         {children}
+        <Analytics />
         <noscript>
           <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
         </noscript>
